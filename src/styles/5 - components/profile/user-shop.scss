@@ -1,0 +1,475 @@
+.user-shop-profile {
+    display: flex;
+    margin: auto;
+  
+    @include mobile {
+      width: 100%;
+    }
+  }
+  
+  .user-shop-profile-block {
+    width: 100%;
+    height: auto;
+  }
+  
+  .user-shop-profile-banner-wrapper {
+    width: 100%;
+    height: 22rem;
+    position: relative;
+    background: lighten($border-color, 3%);
+    overflow: hidden;
+
+    @include mobile {
+      height: 135px;
+      overflow: hidden;
+    }
+  }
+  
+  .user-shop-profile-banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+  
+  }
+  
+  .user-shop-profile-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    
+    @include mobile  {
+      height: 100%;
+    }
+  }
+  
+  .user-shop-detail-wrapper {
+    display: flex;
+    width: 100%;
+    position: relative;
+    bottom: 1.5rem;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1.5px solid #e1e1e1;
+  }
+
+  .user-shop-profile-avatar-wrapper {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid $white;
+    background: $border-color;
+    overflow: hidden;
+
+    @include mobile {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      left: 1.6rem;
+      bottom: 30%;
+      position: relative;
+      background: #e1e1e1;
+      overflow: hidden;
+    }
+  }
+
+.shop-owner-button {
+  display: grid;
+  position: absolute;
+  right: 0;
+  top: 1.5rem;
+
+  @include mobile {
+    display: flex;
+    position: absolute;
+    left: 0%;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    top: auto;
+    right: auto;
+    margin: -.5rem;
+  }
+}
+
+.shop-tittle {
+  margin: 0 2rem;
+  h1 {
+    font-family: "Trirong", serif;
+    font-size: x-large;
+    font-weight: 700;
+  }
+}
+  
+  .user-shop-profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-shop-profile-edit {
+    background: gray;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @include mobile {
+      position: relative;
+      margin: 1rem;
+    }
+  }
+
+  .user-shop-owner-contact-button {
+    background: gray;
+    color: #000;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    @include mobile {
+      position: relative;
+      top: 0;
+      margin: 1rem;
+    }
+  }
+
+  .shop-descriptions {
+    position: relative;
+    width: 100%;
+    padding: 4rem 10rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #e1e1e1;
+
+    @include mobile {
+      padding: 2rem;
+    }
+    
+    span {
+      font-size: medium;
+      font-weight: 100;
+    }
+  }
+
+.user-shop-profile-customer-reviews ul p {
+  font-size: medium;
+  font-family: "Trirong", serif;
+  font-weight: 100;
+}
+
+.user-shop-profile-customer-reviews {
+    width: 100%;
+    height: auto;
+    
+
+    h4 {
+      font-size: large;
+      font-family: "Trirong", serif;
+      font-weight: 700;
+
+    }
+  }
+  
+.user-shop-profile-customer-reviews-header {
+    margin-bottom: -25px;
+}
+
+.user-shop-profile-customer-reviews-wrapper {
+  width: 100%;
+  height: auto;
+  padding: 2rem 0;
+}
+
+.user-shop-profile-customer-reviews-card {
+  display: inline-flex;
+  position: relative;
+  left: -3rem;
+  margin: 2rem 0;
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.user-shop-profile-customer-reviews-avatar {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.user-shop-profile-customer-reviews-card-avatar {
+  padding: .5rem;
+  position: relative;
+  left: 0;
+}
+
+.user-shop-profile-customer-reviews-card-name {
+  width: 25%;
+  padding: .5rem;
+  margin-right: 5rem;
+}
+
+.user-shop-profile-customer-reviews-card-comments {
+  position: relative;
+  width: 70%;
+  margin: 0 2rem;
+  padding: .5rem;
+}
+  .user-shop-profile-details {
+    width: 100%;
+    position: relative;
+    margin: 2rem 0;
+
+    @include mobile {
+      padding: 2rem 0;
+    }
+  }
+
+  .general-details {
+    position: absolute;
+    left: 0;
+  }
+
+  .user-shop-details {
+    width: 100%;
+    position: relative;
+    left: 0;
+    padding: 0 5rem;
+
+     span {
+      font-size: 17px;
+      font-weight: 100;
+      font-family: "Trirong", serif;
+      line-height: 1.5;
+    } 
+}
+  
+  .user-profile-name {
+    text-transform: capitalize;
+  }
+
+  .user-shop-profile {
+    display: flex;
+    margin: 2rem 10rem;
+    margin-bottom: 40px;
+  
+    @include mobile {
+      width: auto;
+      margin: 0.5rem 2rem;
+    }
+  }
+
+.shop-video-display {
+    position: fixed;
+    right: 10rem;
+    bottom: 0;
+    padding: 0;
+    z-index: 55;
+}
+
+.shop-product-display-grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(15rem, 1fr) );
+  grid-gap: 2rem;
+  border-radius: 1rem;
+
+  @include mobile {  
+    grid-template-columns: repeat( auto-fit, minmax(12rem, 1fr) );
+  }
+
+}
+.shop-products-display {
+  margin: 1rem 10rem 5rem;
+
+  @include mobile {
+    margin: 2rem;
+  }
+}
+
+.shop-product-display-grid .product-display .product-display-img img {
+  -webkit-transition: all 1.3s ease; 
+  -moz-transition: all 1.3s ease; 
+  -o-transition: all 1.3s ease;
+  -ms-transition: all 1.3s ease; 
+  width: 100%;
+  height: 200px;
+}
+
+.shop-product-display-grid .product-display:hover .product-display-img img {
+  opacity: 1;
+  -webkit-transform:scale(1.15);
+  -moz-transform:scale(1.15);
+  -ms-transform:scale(1.15);
+  -o-transform:scale(1.15);
+  transform:scale(1.15);
+}
+
+//seller shop profile view
+.user-shop-form-wrapper {
+  display: flex;
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 1.5rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.edit-shop-banner-button {
+  padding: 1.2rem;
+  position: absolute;
+  right: 1rem;
+  bottom: 0;
+  font-size: 2.2rem;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none !important;
+  background: #000 !important;
+  color: #fff;
+
+  @include mobile {
+    position: absolute;
+    right: .5rem;
+    bottom: 0.5rem;
+    font-size: 1.75rem;
+    width: 7rem;
+    height: 2.5rem;
+  }
+}
+
+.edit-shop-video-button {
+  padding: 1.2rem;
+  position: absolute;
+  top: 10px;
+  right: 60px;
+  width: 6rem;
+  height: 3.25rem;
+  border-radius: 10%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none !important;
+  background: #ff0000 !important;
+  color: #fff;
+
+  @include mobile {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    width: 5rem;
+    height: 2.45rem;
+  }
+}
+
+.edit-shop-avatar-button {
+  padding: 1.2rem;
+  position: absolute;
+  top: 5.2rem;
+  left: 2.4rem;
+  font-size: large;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none !important;
+  background: none !important;
+  color: #000;
+  overflow: hidden;
+
+  @include mobile {
+    position: absolute;
+    top: 2.65rem;
+    left: .75rem;
+    font-size: 1.65rem;
+  }
+}
+
+.edit-shop-avatar-button :hover {
+  background: none !important;
+}
+
+.user-shop-profile-form-wrapper {
+  margin: 0 2rem;
+  display: flex;
+  width: 100%;
+
+  @include mobile {
+    display: block;
+    margin: 0 1rem 0 0;
+  }
+}
+
+.user-shop-profile-input-form {
+  padding: 10px 1.6rem !important;
+}
+
+.short-input-forms {
+  display: block;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  width: 40%;
+
+  @include mobile {
+    margin-top: 0;
+    width: 100%;
+  }
+}
+
+.large-input-forms {
+  display: block;
+  margin-right: 3rem;
+  position: absolute;
+  right: 0;
+  margin-top: 2rem;
+  width: 45%;
+
+  @include mobile {
+    position: relative;
+    width: 100%;
+  }
+}
+
+.user-shop-form-phone-input {
+  margin: 1rem;
+}
+
+.creatable-select {
+  margin: 1.5rem 0;
+}
+
+.user-shop-submit-buttons {
+  display: flex;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.submit-update {
+  position: absolute;
+  right: 0;
+
+  @include mobile {
+    width: 50%;
+  }
+}
+
+.back-to-dashboard {
+  position: absolute;
+  left: 0;
+
+  @include mobile {
+    width: 50%;
+  }
+}

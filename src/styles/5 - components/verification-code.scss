@@ -1,0 +1,62 @@
+.verification-code {
+    width: 50%;
+    margin: auto;
+    
+    .inputform {
+      padding: 20px;
+      display: inline-block;
+  
+      input {
+        font-size: 16px;
+        font-family: "Trirong", serif;
+        font-weight: 100;
+        padding: 10px 14px;
+        border: none;
+        background: none ;
+        box-shadow: none;
+        outline: 0;
+        border-radius: 2px;
+        margin: 0;
+    
+        &:focus {
+          outline:0;
+          border: none !important;
+          cursor:text;
+          box-shadow: none;
+        }
+      }
+    
+      fieldset {
+        display: none;
+    
+        &:focus {
+          display: none;
+        }
+      }
+  
+      label {
+        transform: translate(0, -30px) scale(1.5);
+        background: none;
+        border: none;
+        padding-top: 5px;
+        font-family: "Trirong", serif;
+  
+        span {
+          display: none;
+        }
+      }
+  
+      button:hover {
+        background: #0f7dc2;
+        opacity: 0.85;
+      }
+      span {
+        color: #fff;
+        text-shadow: 1px 1px 0 #444;
+        font-size: 1.5rem;
+        font-weight: 100;
+        font-family: "Trirong", serif;
+        text-transform: capitalize
+      }
+    } 
+  }

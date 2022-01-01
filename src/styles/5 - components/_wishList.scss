@@ -1,0 +1,114 @@
+.wishList {
+    width: 66rem;
+    height: auto;
+    background: #f2f2f2;
+    position: relative;
+    top: -16px;
+    /*right: 10rem; 
+    transform: translateX(100%);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, .08);
+    @include bezier-transition(transform);
+    z-index: map-get($z-index, 'basket'); */
+  
+    @include mobile {
+      width: 100%;
+    }
+  }
+  
+  /* .basket-toggle {
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  .basket-list {
+    padding: $m-size;
+    padding-bottom: 100px;
+    overflow-y: scroll;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  .wishList-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid $border-color;
+    margin-bottom: $s-size;
+    @include bezier-transition();
+    animation: slide-up .5s ease;
+  }
+  
+  .wishList-item-wrapper {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 $s-size;
+
+  }
+  
+  .basket-empty {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .basket-empty-msg {
+    color: $gray-10;
+  }
+  
+  .basket-header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: -20px;
+    background: $white;
+    z-index: map-get($z-index, 'basket');
+  }
+  
+  
+  .basket-header-title {
+    flex-grow: 1;
+  }
+  
+  .wishList-item-img-wrapper {
+    width: 90px;
+    height: 60px;
+    margin-right: $m-size;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .wishList-item-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  
+  .wishList-item-details {
+    flex-grow: 1;
+  }
+  
+  .wishList-item-name {
+    margin: $s-size 0;
+    width: 142px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    position: relative;
+  }
+  
+  .wishList-item-price {
+    margin: $s-size 0;
+  }
+  
+  .wishList-item-remove {
+    align-self: center;
+    cursor: pointer;
+  }
+  
+  .basket-clear {
+    align-self: center;
+  }

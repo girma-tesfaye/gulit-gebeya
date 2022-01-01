@@ -1,0 +1,197 @@
+.recommended-products-container {
+    margin: 8rem;
+   
+     /*  @include mobile {
+      margin: 2rem;
+      margin-top: 5rem;
+    } */
+}
+
+@media (max-width: 576px) {
+  .recommended-products-container {
+      margin: 2rem;
+      margin-top: 4rem;
+  }    
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .recommended-products-container {
+      margin: 4rem;
+      margin-top: 5rem;
+  }    
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .recommended-products-container {
+      margin: 6rem;
+      margin-top: 5rem;
+  }    
+}
+
+@media (min-width: 992px) {
+  .recommended-products-container {
+      margin: 8rem;
+      margin-top: 5rem;
+  }    
+}
+
+.recommended-products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    a {
+      text-decoration: underline;
+      font-size: 1.5rem;
+      font-family: "Trirong", serif;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-family: "Trirong", serif;
+    }
+}
+
+.recommended-products-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    a {
+      text-decoration: underline;
+      font-size: 1.5rem;
+      font-family: "Trirong", serif;
+
+      @media (max-width: 768) {
+        font-size: 1rem;
+      }
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-family: "Trirong", serif;
+    }
+
+    @media (max-width: 768) {
+      h2 {
+        font-size: 1.15rem;
+      }
+  }
+}
+
+.recommended-products-grid {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(20rem, 1fr) );
+    grid-gap: 1rem;
+    border-radius: 1rem;
+  
+    /* @include mobile {   //girma edited
+      grid-template-columns: repeat( auto-fit, minmax(12rem, 1fr) );
+    } */
+  
+}
+
+@media (max-width: 576px) {
+  .recommended-products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-gap: 1rem;
+  }
+  } 
+  
+  @media (min-width: 576px) and (max-width: 992px) {
+  .recommended-products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  }
+  }
+  
+  @media (min-width: 992px) and (max-width: 1200px) {
+  .recommended-products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+  }
+  
+  @media (min-width: 1200px) {
+  .recommended-products-grid {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1.5rem;
+  }
+  }
+
+.recommended-products-card {
+    width: 100%;
+    max-height: 25rem;
+    background: #fff;
+    box-shadow: 0 2px 10px 5px rgba(180, 180, 180, 0.6);
+  
+    &:hover {
+      cursor: pointer;
+  
+      .recommended-products-img img {
+        transform: scale(1.1);
+      }
+    }
+}
+
+.recommended-products-img {
+    width: 100%;
+    height: 16rem;
+    background: #fff;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+    span {
+        margin: 0;
+        position: relative;
+        top: -3px;
+    }
+}
+
+.recommended-products-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 5px;
+}
+
+.recommended-products-grid .recommended-products-card .recommended-products-img img {
+    -webkit-transition: all 1.15s ease; 
+    -moz-transition: all 1.25s ease; 
+    -o-transition: all 1.25s ease;
+    -ms-transition: all 1.25s ease; 
+    width: 100%;
+    height: 160px;
+}
+  
+.recommended-products-grid .recommended-products-card:hover .recommended-products-img img {
+    opacity: 1;
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+}
+
+.recommended-products-details {
+    width: 100%;
+    height: 9rem;
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    text-align: center;
+    
+    p {               
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+    }
+}

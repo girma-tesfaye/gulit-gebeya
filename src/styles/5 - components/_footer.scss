@@ -1,0 +1,155 @@
+.footer {
+  position: relative;
+  padding: 0 $xxl-size;
+  margin-top: $xl-size;
+  background: #d9d9d9;
+  border-top:  1px solid #d9d9d9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  span {
+    color: #000;
+  } 
+
+  @include mobile {
+    padding: 0;
+    padding-top: 2.5rem;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.footer-contents {
+  display: flex;
+
+  a {
+    padding: 3px;
+    font-size: 1.7rem;
+    font-weight: 100;
+    font-family: "Trirong", serif;
+    color: #000;
+     
+      &:hover {
+        background: none;
+        text-decoration: none;
+        color: #ff6f00;
+      }
+  }
+}
+
+.footer-items {
+  display: grid;
+}
+
+.footer-logo {
+  width: 15rem;
+  height: 6rem;
+  object-fit: contain;
+}
+
+.footer-col-1 {
+  flex-basis: 40%; 
+
+  @include mobile {
+    flex-basis: none;
+    order: 1;
+    text-align: center;
+  }
+}
+
+.footer-col-2 {
+  padding: 3rem 0;
+  text-align: center;
+  flex-basis: 20%;
+
+  h2 {
+    font-size: x-large;
+    color: #ff6f00; 
+    font-weight: bold;
+    font-family: "Trirong", serif;   
+  }
+  span a {
+    text-decoration: underline;
+    color: #000;
+  }
+
+  @include mobile {
+    flex-basis: none;
+    order: 3;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
+.footer-col-3 {
+  flex-basis: 40%;
+  text-align: right;
+
+  @include mobile {
+    flex-basis: none;
+    order: 2;
+    text-align: center;
+  }
+}
+
+@include mobile {
+  .footer-col-1,
+  .footer-col-2,
+  .footer-col-3 {
+    width: 100%;
+    margin: $s-size 0;
+  }
+}
+
+.about-us {
+  width: 100%;
+  margin: 1rem;
+  position: absolute;
+  top: 3rem;
+
+  span {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "Trirong", serif
+  }
+}
+
+.contact-us {
+  width: 100%;
+  margin: 1rem;
+  position: absolute;
+  top: 3rem;
+
+  span {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "Trirong", serif
+  }
+}
+
+.help-center {
+  width: 100%;
+  margin: 1rem;
+  position: absolute;
+  top: 3rem;
+
+  span {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "Trirong", serif
+  }
+}
+
+.follow-us {
+  width: 100%;
+  margin: 1rem;
+  position: absolute;
+  top: 3rem;
+
+  span {
+    font-size: x-large;
+    font-weight: bold;
+    font-family: "Trirong", serif
+  }
+}

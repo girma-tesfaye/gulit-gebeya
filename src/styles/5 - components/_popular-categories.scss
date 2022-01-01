@@ -1,0 +1,57 @@
+.popular-categories {
+    margin-left: 4rem;
+    width: max-content;
+}
+.popular-categories-header {
+    h2 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-family: "Trirong", serif;
+      }
+}
+
+.popular-categories-wraper {
+    background: #fff;
+    padding: 5px 0 5px 2px;
+    width: 100%;
+    height: auto;
+    border-radius: .5rem;
+}
+
+.popular-categories-card {
+    margin: 0.3rem;
+    margin-right: 1rem;
+    display: inline-flex;
+    align-items:center;
+    justify-content: center;
+    width: 7.75rem;
+    height: 7.75rem;
+    border: none;
+    border-radius: 50%;
+    background: #d9d9d9;
+
+}
+
+.popular-categories-img  img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 30%;
+}
+
+.popular-categories-wraper .popular-categories-card .popular-categories-img  img {
+    -webkit-transition: all 1.3s ease; 
+    -moz-transition: all 1.3s ease; 
+    -o-transition: all 1.3s ease;
+    -ms-transition: all 1.3s ease; 
+    width: 50%;
+    height: 5rem;
+  }
+  
+.popular-categories-wraper .popular-categories-card:hover .popular-categories-img  img {
+    opacity: 1;
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+  }

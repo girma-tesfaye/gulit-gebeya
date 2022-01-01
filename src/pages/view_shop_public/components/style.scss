@@ -1,0 +1,54 @@
+.video-responsive {
+    overflow: hidden;
+    position: relative;
+    //top: -20px;
+  }
+  
+  .video-responsive iframe {
+    //left: 0;
+    //top: 0;
+    //height: 30%;
+    //width: 30%;
+    //position: absolute;
+  }
+
+  .video-link-display {
+    position: absolute;
+    right: 0;
+  }
+
+  .video-link-wraper {
+    width: 2rem;
+    height: 2rem;
+    //margin: 0.5rem;
+    //display: inline-flex;
+  }
+
+  button.video-collapse-button {
+    position: absolute;
+    right: 0;
+    width: auto;
+    background: none;
+    border: none;
+    font-size: 23px;
+    z-index: 1;
+  }
+  
+  .icon-expand {
+    margin-left: -2.5rem;
+    color: red;
+    font-size: xxx-large;
+
+    @media (max-width: 30rem) {
+      font-size: xx-large;
+      //overflow: hidden;
+    }
+  }
+
+  .ReactCollapse--collapse {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .25s ease 0s;
+  }
+  

@@ -1,0 +1,251 @@
+.signin-content {
+  width: 40rem;
+  height: auto;
+  margin: auto;
+
+  @include mobile {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .loader {
+    background: $background-color;
+  }
+}
+
+.signin {
+  display: flex;
+  justify-content: center; 
+  padding: 3.2rem 2rem;
+
+  input {
+    font-size: 16px;
+    font-family: "Trirong", serif;
+    font-weight: 100;
+    padding: 10px 14px;
+    //border: 1px solid #d9d9d9 !important;
+    border: none;
+    background: none ;
+    box-shadow: none;
+    outline: 0;
+    border-radius: 2px;
+
+    &:focus {
+      outline:0;
+      border: none !important;
+      //border: 1px solid #d9d9d9 !important;
+      cursor:text;
+      box-shadow: none;
+    }
+  }
+
+  fieldset {
+    display: none;
+
+    &:focus {
+      display: none;
+    }
+  }
+
+  .signinform {
+    label {
+      transform: translate(0, -30px) scale(1.5);
+      background: none;
+      border: none;
+      padding-top: 5px;
+      font-family: "Trirong", serif;
+
+      span {
+        display: none;
+      }
+      }
+  }
+
+  .signinitem {
+		margin: 0;
+		padding: 8px 15px;
+
+    label { 
+      font-size: 15px;
+      display: initial;
+    }
+	}
+}
+
+.signin-action {
+  button:hover {
+    background: #0f7dc2;
+    opacity: 0.85;
+  }
+  span {
+    color: #fff;
+    text-shadow: 1px 1px 0 #444;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: "Trirong", serif;
+  }
+
+  a {
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: "Trirong", serif;
+
+    &:hover {
+      text-decoration: none;
+      opacity: 0.75;
+    }
+  }
+}
+
+.signinProvider {
+  button {
+    background: #fff;
+		max-width: 220px;
+		width: 100%;
+		margin: 8px 0;
+    padding: 10px;
+
+    &:hover {
+      background: #f1f1f1;
+    }
+  }
+  span {
+    color: #000;
+    text-shadow: none;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: "Trirong", serif;
+    text-transform: capitalize;
+  }
+}
+
+.signin-provider-button {
+  width: 100%;
+  margin: $s-size;
+  display: flex;
+
+  @include mobile {
+      margin: $s-size 0;
+    }
+
+  i {
+    flex-basis: 20%;
+  }
+
+  span {
+    flex-basis: 80%;
+    color: $white;
+    font-size: $m-size;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.signin-button {
+  @include tablet {
+    width: 100%;
+  }
+}
+
+.provider-facebook {
+  @extend .button;
+  background: $color-facebook;
+  color: $white;
+  border: 1px solid $color-facebook;
+  
+  &:hover {
+    background: $color-facebook-hover;
+    border: 1px solid $color-facebook;
+  }
+}
+
+.provider-github {
+  @extend .button;
+  background: $color-github;
+  color: $white;
+  border: 1px solid $color-github;
+  
+  &:hover {
+    background: $color-github-hover;
+    border: 1px solid $color-github;
+  }
+}
+
+.provider-google {
+  @extend .button;
+  background: $white;
+  color: $gray-01;
+  border: 1px solid $border-color-focus;
+
+  &:hover {
+    background: $border-color;
+    border: 1px solid $border-color;
+  }
+
+  span {
+    flex-basis: 80%;
+    color: $paragraph-color;
+  }
+}
+
+.signin-divider {
+  width: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 $xl-size;
+
+  h6 {
+    background: $background-color;
+    padding: $s-size;
+    z-index: 1;
+
+    @include mobile {
+      margin: 1rem 0;
+    }
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    background: $border-color;
+  }
+
+  &:before {
+    top: 50%;
+    left: 0;
+  }
+
+  &:after {
+    right: 0;
+    bottom: 50%;
+  }
+}
+
+.signin-info {
+  margin-right: $l-size;
+}
+
+.forgot_password {
+  width: 50%;
+  margin: auto;
+  
+  @include mobile {
+    width: 100%;
+    padding: $s-size;
+  } 
+}
+
+.signin-success {
+  @extend .toast-success;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
